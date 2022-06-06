@@ -88,6 +88,20 @@ body {
     color: rgb(238, 29, 36);
 }
 
+.btn-primary {
+    padding-left: 60px;
+    padding-right: 60px;
+    min-height: 60px;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #ff0900;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 0 0 8px 0px #0d0c0d;
+    display: block;
+    margin: 0 auto;
+}
+
 .btn {
     font-family: 'Fira Sans';
     font-size: 13px;
@@ -184,7 +198,7 @@ body {
 
 .lesson__name::after {
     content: '';
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0, 0, 0, 0.1);
     width: 50%;
     height: 1px;
     display: block;
@@ -213,4 +227,48 @@ body {
 
 .lesson__name--reverse::after {
     margin-left: auto;
+}
+
+.hero {
+    background-image: url(/img/hero-bg.jpeg);
+}
+
+.hero__body {
+    background-color: rgba(0, 0, 0, 0.88);
+    height: 100vh;
+    padding: 80px 0;
+}
+
+.form__input {
+    max-width: 770px;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    height: 60px;
+    font-family: 'Roboto',sans-serif;
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 1.33;
+    font-weight: 200;
+}
+
+.hero__input {
+    margin-bottom: 32px;
+}
+
+.form__error {
+    max-width: 750px;
+    padding: 10px;
+    font-size: 14px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    background-color: indianred;
+    color: white;
+    display: none;
+}
+
+.form__error--active {
+    display: block;
 }

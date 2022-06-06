@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body class="hero">
+    <div class="hero__body">
+        <div class="container">
+            <form action="/" method="get" class="hero__form form">
+                <span class="form__error">Не заполнено поле Введите ваш эл. адрес</span>
+                <input type="text" class="form__input form__email hero__input" placeholder="Введите ваш эл. адрес">
+                <input class="btn-primary" type="submit" value="Получить уроки за 0 руб." onclick="return false;">
+            </form>
+        </div>
+    </div>
+
+    <script>
+        let formBtn = document.querySelector('.btn-primary');
+        let formError = document.querySelector('.form__error');
+        let formEmail = document.querySelector('.form__email');
+
+        formBtn.addEventListener('click', (e) => {
+            if (formEmail.value !== '') {
+                console.log('Инпут не пустой');
+            } else {
+                formError.classList.add('form__error--active');
+            }
+        });
+    </script>
+</body>
+
+</html>
